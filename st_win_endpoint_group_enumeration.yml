@@ -1,0 +1,20 @@
+#### Sigma Rule: Security-Enabled Local Group Membership Enumeration
+title: Security-Enabled Local Group Membership Enumeration
+id: 12345678-9abc-def0-1234-56789abcdef0
+description: Detects enumeration of security-enabled local group membership which could indicate reconnaissance activity.
+status: experimental
+author: Samuel Tanner
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    EventID: 4799
+    ProcessName: 'C:\\Windows\\System32\\svchost.exe'
+  condition: selection
+falsepositives:
+  - Legitimate administrative activity
+level: medium
+tags:
+  - attack.t1003
+
