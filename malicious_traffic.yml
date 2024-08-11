@@ -1,0 +1,23 @@
+title: Win Application Msmpeng Crash Error
+id: e5607287-a0d5-474e-9863-8d7cca24427b
+status: experimental
+description: Detects 
+references:
+    - 
+author: Samuel
+date: 2024/08/10
+tags:
+    - 
+logsource:
+    category: antivirus
+    product: aws
+    service: activitylogs
+detection:
+    selection:
+        
+    condition: selection
+falsepositives:
+    - Unknown
+level: critical
+
+
