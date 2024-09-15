@@ -2,7 +2,7 @@ title: Suspicious Netsh Command Execution
 id: 1a2b3c4d-5e6f-11ec-bf63-0242ac130002
 description: Detects suspicious execution of netsh commands that may indicate network configuration changes or enumeration.
 status: experimental
-author: Your Name
+author: Samuel Tanner
 logsource:
   category: process_creation
   product: windows
